@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+ul{
+    display: flex;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    color: #C0C0C0;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+/*header*/
+
+
+
+
+header{
+    background-color: #181818;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header div{
+    padding: 30px 20px 30px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li{
+    margin-left: 32px;
+}
+
+header li:last-of-type a{
+    padding: 10px 20px 12px;
+    background: white;
+    border-radius: 14px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.4px;
+}
+
+header li:nth-child(2){
+    margin-left: 56px;
+}
+
+header li:first-of-type a{
+    font-size: 13px;
+}
+
+
+
+
+/*home*/
+
+
+
+
+.home{
+    height: 100vh;
+    background-image: url("../img/home.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.home_div{
+    text-align: center;
+    max-width: 580px;
+}
+
+.home h1{
+    margin-bottom: 18px;
+}
+
+.home ul{
+    position: absolute;
+    right: 40px;
+    bottom: 46px;
+}
+
+.home li{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.clock:before{
+    content: url("../img/clock.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+
+.aperture:before{
+    content: url("../img/aperture.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+.iso:before{
+    content: url("../img/iso.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+.location:before{
+    content: url("../img/location.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+
+
+
+
+/*what_we_do*/
+
+
+
+
+.what_we_do{
+    background-color: black;
+    padding: 113px 0 84px;
+}
+
+.what_we_do_div{
+    max-width: 1168px;
+    margin: auto;
+    text-align: center;
+}
+
+.what_we_do_div_1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.what_we_do h2{
+    margin-bottom: 15px;
+}
+
+.what_we_do h3{
+    margin-bottom: 42px;
+}
+
+.what_we_do article h4{
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.what_we_do article p{
+    margin-bottom: 26px;
+}
+
+.what_we_do article{
+    max-width: 576px;
+    height: 600px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.what_we_do img{
+    width: 100%;
+}
+
+.what_we_do article div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+}
+
+.what_we_do article a{
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 5px 10px 5px 5px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.what_we_do article a:before{
+    content: "";
+    display: block;
+    background-color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 6px;
+}
+
+
+
+
+
+
