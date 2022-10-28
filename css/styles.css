@@ -77,6 +77,47 @@ p{
     margin: auto;
 }
 
+.set_ul{
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+}
+
+.set_li{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.clock:before{
+    content: url("../img/clock.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+
+.aperture:before{
+    content: url("../img/aperture.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+.iso:before{
+    content: url("../img/iso.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
+.location:before{
+    content: url("../img/location.svg");
+    position: relative;
+    margin-right: 6px;
+    top: 6px;
+}
 
 
 
@@ -145,48 +186,6 @@ header li:first-of-type a{
 
 .home h1{
     margin-bottom: 18px;
-}
-
-.home ul{
-    position: absolute;
-    right: 40px;
-    bottom: 46px;
-}
-
-.home li{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: #FFFFFF;
-    margin-left: 16px;
-}
-
-.clock:before{
-    content: url("../img/clock.svg");
-    position: relative;
-    margin-right: 6px;
-    top: 6px;
-}
-
-.aperture:before{
-    content: url("../img/aperture.svg");
-    position: relative;
-    margin-right: 6px;
-    top: 6px;
-}
-.iso:before{
-    content: url("../img/iso.svg");
-    position: relative;
-    margin-right: 6px;
-    top: 6px;
-}
-.location:before{
-    content: url("../img/location.svg");
-    position: relative;
-    margin-right: 6px;
-    top: 6px;
 }
 
 
@@ -267,14 +266,225 @@ header li:first-of-type a{
 .what_we_do article a:before{
     content: "";
     display: block;
+    align-items: center;
     background-color: black;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    position: relative;
     margin-right: 6px;
+    position: relative;
 }
 
+
+
+
+/*sunset*/
+
+
+
+
+.sunset{
+    background-image: url("../img/sunset.jpg");
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 62px;
+    position: relative;
+}
+
+.sunset_div{
+    width: 298px;
+}
+
+.sunset h4{
+    color: white;
+}
+
+
+
+
+/*gear*/
+
+
+
+
+.gear{
+    padding: 173px 0 153px;
+    background: black;
+    justify-content: left;
+    position: relative;
+}
+
+.gear_div{
+    max-width: 1240px;
+    margin: auto;
+}
+
+.gear_bg{
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-image: url("../img/gear.jpg");
+    background-size: cover;
+}
+
+.gear h2{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 14px;
+}
+
+.gear h4{
+    margin-bottom: 6px;
+}
+
+.gear p{
+    max-width: 514px;
+    margin-bottom: 29px;
+    color: white;
+}
+
+.gear a{
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 5px 10px 5px 5px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.gear_div a:before{
+    content: "";
+    display: block;
+    align-items: center;
+    background-color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: relative;
+}
+
+
+
+
+/*monstera*/
+
+
+
+
+.monstera{
+    background-image: url("../img/monstera.jpg");
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 87px;
+    position: relative;
+}
+
+.monstera_div{
+    width: 273px;
+}
+
+.monstera h4{
+    color: white;
+}
+
+
+
+
+/*clients*/
+
+
+
+
+.clients{
+    padding: 113px 0 100px;
+    background-color: black;
+}
+
+.clients_div{
+    max-width: 1168px;
+    margin: auto;
+    text-align: center;
+}
+
+.clients h2{
+    margin-bottom: 15px;
+}
+
+.clients_logos{
+    margin-top: 82px;
+}
+
+.owl-carousel.owl-drag .owl-item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.owl-carousel .owl-stage{
+    display: flex;
+    align-items: center;
+}
+
+.owl-dot span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 16px;
+    opacity: 0.5;
+    border-radius: 20px;
+    background: white;
+    transition: 2s;
+}
+
+.owl-dot.active span{
+    opacity: 1;
+}
+
+.owl-nav{
+    height: 0;
+}
+
+.owl-dots{
+    margin-top: 30px;
+}
+
+
+
+
+/*star*/
+
+
+
+
+.star{
+    background-image: url("../img/star.jpg");
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 106px;
+    position: relative;
+}
+
+.star_div{
+    width: 254px;
+}
+
+.star h4{
+    color: white;
+}
 
 
 
