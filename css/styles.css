@@ -452,7 +452,7 @@ header li:first-of-type a{
 }
 
 .owl-nav{
-    height: 0;
+    display: none;
 }
 
 .owl-dots{
