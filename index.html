@@ -11,37 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
-<header>
+<header class="cd-header header_flex">
     <div class="container">
-        <a href="#">
+        <a href="#" class="header_logo">
             <img src="img/logo.svg" alt="logo">
         </a>
-        <nav>
-          <ul>
-            <li>
-                <a href="#">Business areas</a>
-            </li>
-            <li>
-                <a href="#">Featured images</a>
-            </li>
-            <li>
-                <a href="#">Gear cage</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            <li>
-                <a href="#">Get template</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">Business areas</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Featured images</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Gear cage</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Get template</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
+
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
 
 <main>
     <section class="home">
@@ -68,39 +73,46 @@
             <h3>
                 The areas that we're specialized in
             </h3>
-            <div class="what_we_do_div_1">
-                <article>
-                    <div>
-                        <h4>Product Photography</h4>
-                        <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <img src="img/product.jpg" alt="product">
-                </article>
-                <article>
-                    <div>
-                        <h4>Architecture Photography</h4>
-                        <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <img src="img/architecture.jpg" alt="architecture">
-                </article>
-                <article>
-                    <div>
-                        <h4>Drone Photography</h4>
-                        <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <img src="img/drone.jpg" alt="drone">
-                </article>
-                <article>
-                    <div>
-                        <h4>Wildlife Photography</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <img src="img/wildlife.jpg" alt="wildlife">
-                </article>
+
+            <div id="accordion">
+                <h4>Example</h4>
+                <div class="what_we_do_div_1">
+                    <article>
+                        <div>
+                            <h4>Product Photography</h4>
+                            <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <img src="img/product.jpg" alt="product">
+                    </article>
+                    <article>
+                        <div>
+                            <h4>Architecture Photography</h4>
+                            <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <img src="img/architecture.jpg" alt="architecture">
+                    </article>
+                </div>
+                <h4>Example other</h4>
+                <div class="what_we_do_div_1">
+                    <article>
+                        <div>
+                            <h4>Drone Photography</h4>
+                            <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <img src="img/drone.jpg" alt="drone">
+                    </article>
+                    <article>
+                        <div>
+                            <h4>Wildlife Photography</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <img src="img/wildlife.jpg" alt="wildlife">
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -220,11 +232,14 @@
 </footer>
 
 
+<script src="https://kit.fontawesome.com/c090ec296e.js" crossorigin="anonymous"></script>
 <script
         src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
         crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/scripts.js"></script>
+
 </body>
 </html>
